@@ -122,7 +122,7 @@ let view (patches : Patch.t list) =
              | _ -> `Unhandled)
            (W.string
               "Type 'q' to quit, 'n' to go to the next operation, 'p' to go to \
-               the previous operation");
+               the previous operation.");
     ]
 
 let start patch = Ui_loop.run ~quit ~tick_period:0.2 (view patch)
